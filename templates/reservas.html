@@ -1,0 +1,50 @@
+{% extends "inicio.html" %}
+
+{% block content %}
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <h3 class="text-center mb-4">Reservas</h3>
+                <form method="post" class="needs-validation" novalidate>
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        {{ form.nombre.label_tag }}
+                        {{ form.nombre }}
+                        <div class="invalid-feedback">
+                            Por favor ingresa un nombre válido.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        {{ form.apellido.label_tag }}
+                        {{ form.apellido }}
+                        <div class="invalid-feedback">
+                            Por favor ingresa un apellido válido.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        {{ form.edad.label_tag }}
+                        {{ form.edad }}
+                        <div class="invalid-feedback">
+                            Por favor ingresa una edad válida.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        {{ form.email.label_tag }}
+                        {{ form.email }}
+                        <div class="invalid-feedback">
+                            Por favor ingresa un correo electrónico válido.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        {{ form.telefono.label_tag }}
+                        {{ form.telefono }}
+                        <div class="invalid-feedback">
+                            Por favor ingresa un número de teléfono válido.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}

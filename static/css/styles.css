@@ -1,0 +1,64 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f8f9fa;
+}
+/* fonts */
+.ubuntu-mono-regular {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-weight: bold;
+}
+/* hotel transilvaiona */
+.font-weight-bold {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* logo */
+.logo-container {
+    margin-top: 50px; 
+}
+
+.logo-container img {
+    max-width: 40%; 
+    height: auto; 
+}
+/* Estilos para el form */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+
+/* Estilos para el footer */
+/* footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+    background-color: #f8f9fa; 
+    padding: 20px; 
+    color: #6c757d;
+    font-size: 14px; 
+    text-align: center; 
+    z-index: 999; 
+} */

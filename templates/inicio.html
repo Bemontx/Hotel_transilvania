@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} bootstrap {% endcomment %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    {% comment %} css {% endcomment %}
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    {% comment %} google-fonts {% endcomment %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Hotel Transilvania</title>
+</head>
+<body>
+    <div>
+        {% include "navBar.html" %}
+    </div>
+
+    {% block content %}
+    <section class="container mb-5"> 
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h1 class="mb-4">Bienvenido</h1>
+                <div class="logo-container">
+                    <img src="{% static "img/Hotel_logo.svg.png" %}" alt="logo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-8 offset-md-2">
+                <div class="text-center">
+                    <h3 class="mb-4">¡Bienvenidos a Hotel Transilvania!</h3>
+                </div>
+                <p class="text-justify">En Hotel Transilvania, nos enorgullecemos de ofrecer una experiencia única y memorable para nuestros huéspedes. Sumérgete en un mundo de elegancia y encanto, donde la hospitalidad se combina con la misteriosa atmósfera de Transilvania. Nuestro hotel ofrece una variedad de servicios de primera clase para garantizar que tu estancia sea perfecta. Desde lujosas habitaciones hasta deliciosas opciones gastronómicas y emocionantes actividades, estamos aquí para hacer que tu visita sea inolvidable.</p>
+                <p class="text-justify">Despierta cada mañana con las impresionantes vistas de los paisajes transilvanos desde la comodidad de tu habitación. Nuestro personal atento estará encantado de atender todas tus necesidades y asegurarse de que tengas una experiencia inigualable durante tu tiempo con nosotros. Explora los encantos de Transilvania con nuestras excursiones organizadas y descubre la rica historia y cultura de la región. O simplemente relájate y rejuvenece en nuestro lujoso spa, donde podrás disfrutar de tratamientos rejuvenecedores y momentos de tranquilidad.</p>
+                <p class="text-justify">En Hotel Transilvania, nos esforzamos por superar tus expectativas en cada detalle, desde el momento en que llegas hasta tu partida. Te invitamos a sumergirte en la magia de Transilvania y descubrir la verdadera esencia de la hospitalidad en nuestro hotel. ¡Esperamos poder darte la bienvenida pronto a Hotel Transilvania y brindarte una experiencia que recordarás para siempre!</p>
+                <p class="text-justify">Siéntete libre de ajustar esta descripción según los servicios específicos y la atmósfera que deseas promover en tu hotel.</p>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+    
+
+
+    
+    <div>
+        {% include "footer.html" %}
+    </div>
+    {% comment %} javascript-bootstrap {% endcomment %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
